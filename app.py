@@ -10,7 +10,7 @@ from statsmodels.tsa.api import VAR
 import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller
 import json
-from config import Config
+from code_base.config import Config
 
 class ApiCreation:
     def __init__(self,model_pickle_path,data_path):
