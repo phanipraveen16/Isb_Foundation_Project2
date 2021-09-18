@@ -1,7 +1,6 @@
 import pandas as pd
 import statsmodels.api as sm
 from statsmodels.tsa.api import VAR
-import matplotlib.pyplot as plt
 import numpy as np
 import pickle
 from statsmodels.tsa.stattools import adfuller

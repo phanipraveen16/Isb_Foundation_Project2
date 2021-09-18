@@ -7,7 +7,6 @@ import pickle
 
 import statsmodels.api as sm
 from statsmodels.tsa.api import VAR
-import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller
 import json
 from config import Config
@@ -47,7 +46,7 @@ model_pickle_path = Config().model_config['model_save_path']
 data_path = Config().model_config['data_path']
 api = ApiCreation(model_pickle_path,data_path)
 
-@app.route("/forecast", methods=['POST', 'GET'])
+@app.route("/", methods=['POST', 'GET'])
 def forecast():
     try:
         request_json = request.get_json()
