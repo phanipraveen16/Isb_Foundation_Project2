@@ -7,7 +7,6 @@ import pickle
 
 import statsmodels.api as sm
 from statsmodels.tsa.api import VAR
-import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller
 import json
 from code_base.config import Config
@@ -61,7 +60,7 @@ def forecast():
     return jsonify(result)
 
 def main():
-    app.run(host="0.0.0.0", port=5005, debug=False,threaded=False)
+    app.run(host="0.0.0.0", port=5008, debug=False,threaded=False)
     
 if __name__ == "__main__":
     main()        
