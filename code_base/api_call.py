@@ -11,7 +11,7 @@ def api_call(path,steps):
     output = resp.json()
     return output
 
-path = "http://localhost:5005/forecast"
+path = "https://isb-foundation-project2.herokuapp.com/forecast"
 steps = 4
 print(api_call(path,steps))
 
